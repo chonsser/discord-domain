@@ -7,6 +7,7 @@
  */
 
 namespace Discord\ValueObject;
+
 use Discord\Exception\InvalidGuildNameException;
 use Discord\ValueObjectInterface;
 
@@ -66,10 +67,9 @@ final class GuildName implements ValueObjectInterface
 
     /**
      * @param $value
-     * @return bool
      * @throws InvalidGuildNameException
      */
-    public static function guard($value): bool
+    public static function guard($value)
     {
         if(is_string($value) === false){
             throw new InvalidGuildNameException(

@@ -29,7 +29,6 @@ interface ValueObjectInterface extends \JsonSerializable
 
     /**
      * @param $value
-     * @return mixed
      */
-    public static function guard($value): bool;
+    public static function guard($value): void;
 }
