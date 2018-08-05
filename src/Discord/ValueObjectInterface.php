@@ -17,7 +17,7 @@ interface ValueObjectInterface extends \JsonSerializable
     public static function fromNative($value): ValueObjectInterface;
 
     /**
-     * @param  ValueObjectInterface $object
+     * @param ValueObjectInterface $object
      * @return bool
      */
     public function sameValueAs(ValueObjectInterface $object): bool;
