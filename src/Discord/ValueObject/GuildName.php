@@ -80,10 +80,10 @@ final class GuildName implements ValueObjectInterface
         $length = mb_strlen($value);
 
         if ($length > self::MAX_LENGTH) {
-            throw new InvalidGuildNameException("Guild name must have less than 100 characters");
+            throw new InvalidGuildNameException("Guild name must have less than 100 characters, has " . $length);
         }
         if ($length < self::MIN_LENGTH) {
-            throw new InvalidGuildNameException("Guild name must have more than 2 characters");
+            throw new InvalidGuildNameException("Guild name must have more than 2 characters, has " . $length);
         }
     }
 
