@@ -69,7 +69,7 @@ final class GuildName implements ValueObjectInterface
      * @param $value
      * @throws InvalidGuildNameException
      */
-    public static function guard($value)
+    public static function guard($value): void
     {
         if(is_string($value) === false){
             throw new InvalidGuildNameException(
