@@ -1,0 +1,22 @@
+{
+    "name": "chonsyu/discord-domainobjects",
+    "description": "Discord domain & value objects",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "chonsyu",
+            "email": "toja@wtf.city"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php":"^7.1",
+        "ext-mbstring": "*",
+    },
+    "autoload": {
+        "psr-4": {
+            "Discord\\": "src",
+        }
+    }
+}
