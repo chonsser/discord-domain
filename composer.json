@@ -1,5 +1,5 @@
 {
-    "name": "chonsyu/discord-domainobjects",
+    "name": "chonsyu/discord-domain",
     "description": "Discord domain & value objects",
     "type": "library",
     "license": "MIT",
